@@ -10,7 +10,7 @@ import {MainComponent} from './components/pages/main/main.component';
 import {NewsComponent} from './components/pages/news/news.component';
 import {LaboratoryBoardComponent} from './components/pages/laboratory-board/laboratory-board.component';
 
-const routes: number = [
+const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'news', component: NewsComponent},
   {path: 'board', component: LaboratoryBoardComponent},
