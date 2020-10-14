@@ -5,9 +5,8 @@ body
   color: black
   width: 100%
   height: 110px
-  background-color: greenyellow
   position: relative
-
+  margin: 0
 .header__logo__bsu-icon
     position: absolute
     width: 31px
@@ -33,7 +32,7 @@ body
   position: absolute
   width: 226.29px
   height: 24px
-  left: 225.26px
+  left: 225px
   top: 33px
   font-family: Oswald
   font-style: normal
@@ -51,4 +50,66 @@ body
   justify-content: space-between
   align-items: center
 
+.header__panel__search-icon, .header__panel__menu-icon, .header__panel__input-icon
+  cursor: pointer
 
+$mobile: 568px
+$tablet: 768px
+$desktop: 1024px
+
+=desktop
+  @media screen and (max-width: 1024px)
+    @content
+
+=tablet
+  @media screen and (min-width: 768px) and (max-width: 1024px - 1px)
+    @content
+
+=mobile
+  @media screen and (max-width: 568px)
+    @content
+
+.header
+  max-width: 100%
+  flex: 1 2
+  min-height: 110px
+  margin: 10px 0
+
+  +tablet
+    min-width: 50%
+  +mobile
+    min-width: 100%
+
+.title
+  position: absolute
+  width: 425px
+  height: 140px
+  left: 225px
+  top: 255px
+
+.title__up
+  font-family: Oswald
+  font-style: normal
+  font-weight: bold
+  font-size: 50px
+  line-height: 74px
+  letter-spacing: 0.05em
+  color: #2D2D2D
+
+.title__down
+  font-family: Oswald
+  font-style: normal
+  font-size: 50px
+  line-height: 74px
+  letter-spacing: 0.05em
+  color: #2D2D2D
+  white-space: nowrap
+
+.main-picture
+  position: absolute
+  width: 413px
+  height: 413px
+  left: 866px
+  top: 88px
+  box-shadow: 4px 4px 30px 20px rgba(151, 212, 233, 0.15)
+  border-radius: 300px
