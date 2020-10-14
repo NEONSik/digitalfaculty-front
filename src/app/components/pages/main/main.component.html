@@ -1,18 +1,16 @@
-<div class="header">
-  <div class="header__logo">
-    <img src="/assets/icons/logo.png" class="header__logo__bsu-icon" alt="">
+<app-header (onToggleSearch)="changeStateSearchWindow($event)"></app-header>
+<div [ngClass]="{'main__search-container_enable':isActiveSearch}"
+  class="main__search-container">
+  <div class="main__search-line">
+    <app-ui-input
+      class="main__search-input"
+      placeholder="Поиск">
+    </app-ui-input>
   </div>
-  <div class="header__logo-faculty">Цифровой факультет</div>
-  <div class="header__logo-bsu">Белорусский государственный университет</div>
-   <div class="header__panel">
-     <img src="/assets/icons/menu.png" class="header__panel__menu-icon" alt="">
-     <img src="/assets/icons/search.png" class="header__panel__search-icon" alt="">
-     <img src="/assets/icons/input.png" class="header__panel__input-icon" alt="">
-   </div>
 </div>
-<div class="title">
-  <div class="title__up">НИЛ Методов</div>
-  <div class="title__down">Обработки Информации</div>
-</div>
-<img src="/assets/images/pic-1.png" class="main-picture" alt="">
+<!--<div class="title">-->
+<!--  <div class="title__up">НИЛ Методов</div>-->
+<!--  <div class="title__down">Обработки Информации</div>-->
+<!--</div>-->
+<!--<img src="/assets/images/pic-1.png" class="main-picture" alt="">-->
 

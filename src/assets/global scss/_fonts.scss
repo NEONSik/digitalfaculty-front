@@ -1,0 +1,31 @@
+@import "color";
+
+@mixin font-oswald-18-normal {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: $black;
+}
+
+@mixin font-oswald-16 {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: $black;
+}
+
+@mixin font-oswald-15-normal{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: black;
+}

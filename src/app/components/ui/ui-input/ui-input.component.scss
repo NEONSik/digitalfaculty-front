@@ -1,0 +1,22 @@
+@import "~src/assets/global scss/fonts";
+
+:host {
+  display: flex;
+
+  width: 100%;
+
+  .ui-input {
+    display: flex;
+    justify-content: center;
+    background: $white;
+    box-shadow: $light-gray-shadow;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    padding:0 10px;
+    max-width: 600px;
+    border-radius: 5px;
+    @include font-oswald-18-normal;
+  }
+
+}
