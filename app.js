@@ -7,7 +7,7 @@ const app = express();
 
 app.use(compression());
 
-app.use(express.static(path.join(__dirname, 'dist/digitalfaculty-front')));
+app.use(express.static(path.join(__dirname, 'dist/digital-faculty')));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/digitalfaculty-front/index.html'));
