@@ -29,3 +29,14 @@
   letter-spacing: 0.05em;
   color: black;
 }
+
+@mixin font-oswald-17-normal{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}

@@ -8,7 +8,24 @@
       </div>
     </div>
     <div class="header__panel">
-      <img src="/assets/icons/menu.png" class="header__panel-icon unselected" alt="">
+      <ng-container *ngIf="isActiveBurger">
+        <div
+          [ngClass]="{'header__panel-navbar_active':isActiveBurger}"
+          class="header__panel-navbar">
+          <div class="header__navbar-link">Лаборатории</div>
+          <div class="header__navbar-link">Новости</div>
+          <div class="header__navbar-link">Контакты</div>
+        </div>
+      </ng-container>
+      <!--      <img src="/assets/icons/menu.png" class="header__panel-icon unselected" alt="">-->
+      <div class="header__panel-icon header__panel-icon_menu"
+           (click)="onToggleBurger()"
+           [ngClass]="{'header__panel-icon_menu_active':isActiveBurger}">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <img src="/assets/icons/search.png"
            (click)="changeSearchState()"
            class="header__panel-icon header__panel-icon_search unselected" alt="">
@@ -16,3 +33,12 @@
     </div>
   </div>
 </div>
+<ng-container *ngIf="isActiveBurger">
+  <div
+    [ngClass]="{'header__panel-navbar_active':isActiveBurger}"
+    class="header__panel-navbar header__panel-navbar_mobile">
+    <div class="header__navbar-link">Лаборатории</div>
+    <div class="header__navbar-link">Новости</div>
+    <div class="header__navbar-link">Контакты</div>
+  </div>
+</ng-container>
