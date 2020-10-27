@@ -1,16 +1,37 @@
-<!--<app-header (onToggleSearch)="changeStateSearchWindow($event)"></app-header>-->
-<!--<div [ngClass]="{'main__search-container_enable':isActiveSearch}"-->
-<!--  class="main__search-container">-->
-<!--  <div class="main__search-line">-->
-<!--    <app-ui-input-->
-<!--      class="main__search-input"-->
-<!--      placeholder="Поиск">-->
-<!--    </app-ui-input>-->
-<!--  </div>-->
-<!--</div>-->
-<!--<div class="title">-->
-<!--  <div class="title__up">НИЛ Методов</div>-->
-<!--  <div class="title__down">Обработки Информации</div>-->
-<!--</div>-->
-<!--<img src="/assets/images/pic-1.png" class="main-picture" alt="">-->
+<app-header (onToggleSearch)="changeStateSearchWindow($event)"></app-header>
+<div [ngClass]="{'main__search-container_enable':isActiveSearch}"
+  class="main__search-container">
+  <div class="main__search-line">
+    <app-ui-input
+      class="main__search-input"
+      placeholder="Поиск">
+    </app-ui-input>
+  </div>
+</div>
+
 <app-ui-carousel></app-ui-carousel>
+
+<div class="knowledge-more">
+  <div class="knowledge-more__news">Новости</div>
+  <div class="knowledge-more__video">Видео</div>
+  <div class="knowledge-more__photo">Фото</div>
+  <div class="knowledge-more__line"></div>
+</div>
+
+<app-ui-news></app-ui-news>
+
+<div class="feedback">
+  <div class="feedback__info">
+    <div class="feedback__info__title">Получите Информацию</div>
+    <div class="feedback__info__input">
+      <input class="feedback__info__input__text" type="email" placeholder="Введите Ваш e-mail адрес">
+    </div>
+  </div>
+  <div class="feedback__news">
+    <div class="feedback__news__title">Следить за Новостями</div>
+    <div class="feedback__news__networks">
+
+    </div>
+  </div>
+</div>
+

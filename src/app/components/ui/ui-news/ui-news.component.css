@@ -1,0 +1,73 @@
+.news {
+  width: 100%;
+  height: 290px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.news__main {
+  width: 90%;
+  height: 290px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news__main__block-1 {
+  display: flex;
+  flex-direction: column;
+}
+.news__main__block-1__title {
+  width: 250px;
+  font-size: 16px;
+  font-family: Oswald;
+}
+.news__main__block-1__subtitle {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-family: Oswald;
+  color: whitesmoke;
+}
+.news__main__block-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.news__main__block-2__title {
+  cursor: pointer;
+  width: 250px;
+  font-size: 16px;
+  font-family: Oswald;
+}
+.news__main__block-2__subtitle {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-family: Oswald;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+.news__main__block-3 {
+  display: flex;
+  flex-direction: column;
+}
+.news__main__block-3__title {
+  width: 250px;
+  font-size: 16px;
+  font-family: Oswald;
+}
+.news__main__block-3__subtitle {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-family: Oswald;
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=ui-news.component.css.map */

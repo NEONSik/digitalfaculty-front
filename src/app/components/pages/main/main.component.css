@@ -1,17 +1,184 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "src/assets/global scss/fonts";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   main.component.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"src/assets/global scss/fonts\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   main.component.scss 1:9  root stylesheet";
+:host .main__search-container {
+  transition: 0.4s;
+  background: #000000;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(100%);
 }
+:host .main__search-container_enable {
+  transform: translateY(0);
+  display: flex;
+  width: 100%;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+:host .main__search-line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:host .main__search-input {
+  width: 100%;
+  max-width: 600px;
+}
+
+.knowledge-more {
+  width: 750px;
+  height: 70px;
+  margin-top: 450px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 21%;
+  font-family: Oswald;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .knowledge-more {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
+  .knowledge-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .knowledge-more .knowledge-more__line {
+    display: none;
+  }
+  .knowledge-more .knowledge-more__news {
+    margin-left: 0;
+  }
+  .knowledge-more .knowledge-more__video {
+    margin: 20px 0 20px 0;
+  }
+}
+.knowledge-more__news {
+  width: 70px;
+  height: 70px;
+  border: gray solid 2px;
+  border-radius: 100%;
+  margin-left: 218px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  color: gray;
+  z-index: 100;
+  background-color: white;
+}
+
+.knowledge-more__news:hover {
+  transition: 0.3s;
+  background-color: black;
+  color: white;
+  border: black solid 2px;
+}
+
+.knowledge-more__video {
+  width: 70px;
+  height: 70px;
+  border: gray solid 2px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  transition: 0.3s;
+  color: gray;
+  z-index: 100;
+  background-color: white;
+}
+
+.knowledge-more__video:hover {
+  transition: 0.3s;
+  background-color: black;
+  color: white;
+  border: black solid 2px;
+}
+
+.knowledge-more__photo {
+  width: 70px;
+  height: 70px;
+  border: gray solid 2px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  color: gray;
+  z-index: 100;
+  background-color: white;
+}
+
+.knowledge-more__photo:hover {
+  transition: 0.3s;
+  background-color: black;
+  color: white;
+  border: black solid 2px;
+}
+
+.knowledge-more__line {
+  position: absolute;
+  width: 750px;
+  height: 0px;
+  border: 1px solid gray;
+  margin-top: 35px;
+}
+
+.feedback {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.feedback__info {
+  width: 320px;
+  height: 90px;
+  margin-left: 230px;
+}
+.feedback__info__title {
+  font-family: Oswald;
+  font-size: 28px;
+}
+.feedback__info__input {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 220px;
+  height: 30px;
+}
+.feedback__info__input__text {
+  width: 220px;
+  height: 30px;
+  border: black solid 1px;
+  border-radius: 5px;
+}
+.feedback__news {
+  width: 320px;
+  height: 90px;
+  margin-left: 220px;
+}
+.feedback__news__title {
+  font-family: Oswald;
+  font-size: 28px;
+}
+.feedback__news__networks {
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=main.component.css.map */

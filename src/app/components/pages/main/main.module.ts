@@ -4,6 +4,7 @@ import {MainComponent} from './main.component';
 import {HeaderModule} from '../../../core/header/header.module';
 import {UiInputModule} from '../../ui/ui-input/ui-input.module';
 import {UiCarouselModule} from '../../ui/ui-carousel/ui-carousel.module';
+import {UiNewsModule} from "../../ui/ui-news/ui-news.module";
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import {UiCarouselModule} from '../../ui/ui-carousel/ui-carousel.module';
     CommonModule,
     UiInputModule,
     UiCarouselModule,
+    UiNewsModule,
     HeaderModule,
   ]
 })
