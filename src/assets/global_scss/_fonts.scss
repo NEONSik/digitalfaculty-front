@@ -56,3 +56,13 @@
   line-height: 74px;
   letter-spacing: 0.05em
 }
+
+@mixin font-oswald-28-normal{
+  font-family: Oswald;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 41px;
+  letter-spacing: 0.07em;
+  text-align: left;
+}
