@@ -1,23 +1,71 @@
-<div class="slider middle">
+<!--<div class="slider middle">-->
 
-  <div class="slides">
+<!--  <div class="slides">-->
 
-    <input type="radio" name="r" id="r1" checked>
-    <input type="radio" name="r" id="r2">
-    <input type="radio" name="r" id="r3">
-    <input type="radio" name="r" id="r4">
+<!--    <input type="radio" name="r" id="r1" checked>-->
+<!--    <input type="radio" name="r" id="r2">-->
+<!--    <input type="radio" name="r" id="r3">-->
+<!--    <input type="radio" name="r" id="r4">-->
 
-    <div class="slide s1"><img src="assets/images/pic-1.png" alt=""></div>
-    <div class="slide"><img src="assets/images/pic-2.png" alt=""></div>
-    <div class="slide"><img src="assets/images/pic-3.png" alt=""></div>
+<!--    <div class="slide s1"><img src="assets/images/pic-1.png" alt=""></div>-->
+<!--    <div class="slide"><img src="assets/images/pic-2.png" alt=""></div>-->
+<!--    <div class="slide"><img src="assets/images/pic-3.png" alt=""></div>-->
 
-    <div class="navigation">
-      <label for="r1" class="bar"></label>
-      <label for="r2" class="bar"></label>
-      <label for="r3" class="bar"></label>
+<!--    <div class="navigation">-->
+<!--      <label for="r1" class="bar"></label>-->
+<!--      <label for="r2" class="bar"></label>-->
+<!--      <label for="r3" class="bar"></label>-->
+<!--    </div>-->
+
+
+<!--  </div>-->
+
+<!--</div>-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="5000">
+      <div class="carousel-item__block" style="background-color: blue">
+        <div class="carousel-item__title">
+          Проект
+          <br><br>
+          Цифровой Факультет
+        </div>
+        <img src="assets/images/pic-1.png" class="d-block w-100">
+      </div>
     </div>
-
-
+    <div class="carousel-item" data-interval="5000">
+      <div class="carousel-item__block" style="background-color: green">
+        <div class="carousel-item__title">
+          Проект
+          <br><br>
+          Цифровой Факультет
+        </div>
+        <img src="assets/images/pic-2.png" class="d-block w-100" >
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="5000">
+      <div class="carousel-item__block">
+        <div class="carousel-item__title">
+          Проект
+          <br><br>
+          Цифровой Факультет
+        </div>
+        <img src="assets/images/pic-3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
   </div>
-
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
+

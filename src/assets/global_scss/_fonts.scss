@@ -37,6 +37,22 @@
   font-size: 17px;
   line-height: 21px;
   /* identical to box height */
-
   text-transform: uppercase;
+}
+@mixin font-oswald-32-normal{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+  letter-spacing: 0.05em;
+}
+
+@mixin font-oswald-50-normal{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 74px;
+  letter-spacing: 0.05em
 }
