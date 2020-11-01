@@ -66,3 +66,25 @@
   letter-spacing: 0.07em;
   text-align: left;
 }
+
+@mixin font-oswald-40-normal{
+  font-family: Oswald;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@mixin font-oswald-16-normal{
+  font-family: Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+}
