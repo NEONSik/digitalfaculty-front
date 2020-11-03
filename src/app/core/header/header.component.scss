@@ -112,6 +112,7 @@
       transform: translateX(100%);
      &_active{
        transition: .5s;
+       margin-bottom: 20px;
        opacity: 1;
        transform-origin: right;
        transform: translateX(0);
@@ -136,7 +137,7 @@
     &__navbar-link {
       cursor: pointer;
       transition: .3s;
-      margin: 0 80px;
+      margin: 0 40px;
       @include font-oswald-17-normal;
       @media (max-width: 1200px) {
         margin: 0 20px;
