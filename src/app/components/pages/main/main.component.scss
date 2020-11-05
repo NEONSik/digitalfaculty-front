@@ -2,7 +2,7 @@
 
 :host {
   .main {
-    &__news{
+    &__news {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -11,6 +11,7 @@
       width: 100%;
 
     }
+
     &__search-container {
       //display: none;
       transition: .4s;
@@ -64,7 +65,7 @@
     height: 70px;
     border: gray solid 2px;
     border-radius: 100%;
-    margin:0 11px;
+    margin: 0 11px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,12 +80,13 @@
       color: white;
       border: black solid 2px;
     }
+
     @media (max-width: 800px) {
-     width: 55px;
+      width: 55px;
       height: 55px;
       @include font-oswald-16;
       font-size: 12px;
-      color:$gray;
+      color: $gray;
       font-weight: normal;
     }
   }
@@ -94,7 +96,7 @@
     width: 100%;
     max-width: 750px;
     height: 1px;
-    background-color:$gray;
+    background-color: $gray;
     @media (max-width: 800px) {
       display: none;
     }
@@ -192,18 +194,21 @@
   }
 }
 
-.laboratory{
+.laboratory {
   width: 100%;
   height: 850px;
   margin-top: 20px;
-  background-color: #712200;
+  background-image: url("/assets/images/laboratories_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  &__bg{
+  &__bg {
     height: 100%;
+    width: 100%;
     position: absolute;
   }
 
-  &__title{
+  &__title {
     width: 100%;
     height: 100px;
     display: flex;
@@ -211,7 +216,7 @@
     @include font-oswald-40-normal;
   }
 
-  &__subtitle{
+  &__subtitle {
     width: 40%;
     height: 160px;
     margin-left: auto;
@@ -220,7 +225,7 @@
     @include font-oswald-16-normal;
   }
 
-  &__main{
+  &__main {
     width: 80%;
     height: 480px;
     display: flex;
@@ -228,17 +233,18 @@
     margin-left: auto;
     margin-right: auto;
 
-    &__block{
+    &__block {
       display: flex;
       flex-direction: column;
       width: 300px;
       height: 480px;
       margin: 0 auto;
       align-items: center;
-      background-color: navajowhite;
-      color: snow;
+      opacity: 0.8;
+      background-color:$light-gray;
+      color:$dark-blue;
 
-      &__title{
+      &__title {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -248,14 +254,14 @@
         @include font-oswald-32-normal;
       }
 
-      &__subtitle{
+      &__subtitle {
         width: 200px;
         height: 300px;
         margin-top: 90px;
         @include font-oswald-16-normal-left;
       }
 
-      &__button{
+      &__button {
         width: 260px;
         height: 70px;
         border: white solid 6px;
