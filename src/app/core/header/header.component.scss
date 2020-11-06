@@ -1,6 +1,10 @@
 @import "../../../assets/global_scss/fonts";
 
 :host {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  display: flex;
 
   .header {
     color: $black;
@@ -34,7 +38,7 @@
       flex-direction: column;
       text-align: start;
       align-items: start;
-      @media (max-width: 1000px) {
+      @media (max-width: 1200px) {
         display: none;
       }
     }
@@ -109,26 +113,46 @@
       width: 100%;
       transition: .5s;
       opacity: 0;
-      transform: translateX(100%);
-     &_active{
-       transition: .5s;
-       margin-bottom: 20px;
-       opacity: 1;
-       transform-origin: right;
-       transform: translateX(0);
-     }
+      transform: translateX(-100%);
+
+      &_active {
+        transition: .5s;
+        opacity: 1;
+        transform-origin: right;
+        transform: translateX(0);
+      }
+
       justify-content: space-between;
       @media (max-width: 1200px) {
         display: none;
+        &_active {
+          position: relative;
+          margin-bottom: 20px;
+        }
       }
 
       &_mobile {
         display: none;
         @media (max-width: 1200px) {
           display: flex;
-          position: static;
-          height: 100%;
+          right: 0;
+          bottom: -40px;
+          position: absolute;
+          height: max-content;
           width: auto;
+          //left: 490px;
+          //top: 40px;
+          //flex-direction: column;
+          //padding: 0 20px;
+        }
+        @media (max-width: 430px) {
+          display: flex;
+          position: absolute;
+          height: max-content;
+          width: auto;
+          left: 90px;
+          top: 80px;
+          flex-direction: column;
           padding: 0 20px;
         }
       }
@@ -143,7 +167,7 @@
         margin: 0 20px;
       }
       @media (max-width: 639px) {
-        margin: 0;
+        margin: 10px;
       }
 
       &:hover {
@@ -154,6 +178,7 @@
 
     &__panel {
       height: 100px;
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;

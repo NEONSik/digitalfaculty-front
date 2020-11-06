@@ -89,38 +89,74 @@ slide img {
 ::ng-deep .carousel-control-next-icon, .carousel-control-prev-icon {
   background-color: black;
 }
-::ng-deep .carousel-control-prev,.carousel-control-next{
+
+::ng-deep .carousel-control-prev, .carousel-control-next {
   width: 5%;
 
 }
 
 ::ng-deep #carouselExampleIndicators {
   width: 100%;
-display: flex;
+  display: flex;
   height: 50%;
   margin: 0 auto;
 }
 
 .carousel-item__title {
   color: $black-font;
+  margin-left: 80px;
+  @media (max-width: 1000px) {
+    margin-left: 20px;
+
+  }
   @include font-oswald-50-normal;
 }
 
-.carousel-item__block{
+.carousel-inner {
+  background-color: $light-gray;
+  opacity: 0.8;
+
+  //position: relative;
+}
+
+.carousel-item__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height:760px;
-  margin-left: 51px;
+
+  //position: absolute;
+  height: 660px;
+  //margin-left: 51px;
 }
-::ng-deep .w-100{
+
+.carousel-item {
+
+}
+
+::ng-deep .w-100 {
   width: 50% !important;
 }
+
 @media (max-width: 1200px) {
   #carouselExampleInterval {
     height: max-content;
-  } .carousel-inner{
-      height: 250px;
-    }
+  }
+  .carousel-inner {
+    height: 550px;
+  }
+  .carousel {
+    display: none;
+  }
+}
 
+.carousel-item__title {
+  @media (max-width: 830px) {
+    font-size: 24px;
+  }
+}
+
+.carousel__title {
+  &_mobile {
+    display: none;
+  }
 }

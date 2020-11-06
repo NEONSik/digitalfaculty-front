@@ -6,7 +6,11 @@
   margin: 0 auto;
   width: 100%;
 }
+:host .main__header {
+  position: relative;
+}
 :host .main__search-container {
+  position: absolute;
   transition: 0.4s;
   background: #000000;
   height: 100px;
@@ -19,9 +23,17 @@
 :host .main__search-container_enable {
   transform: translateY(0);
   display: flex;
+  position: absolute;
+  margin-top: 75px;
+  z-index: 999999;
   width: 100%;
   opacity: 0.6;
   transition: 0.4s;
+}
+@media (max-width: 630px) {
+  :host .main__search-container_enable {
+    margin-top: 174px;
+  }
 }
 :host .main__search-line {
   width: 100%;
@@ -102,7 +114,7 @@
   font-size: 32px;
   line-height: 47px;
   letter-spacing: 0.05em;
-  margin-bottom: 32px;
+  margin: 32px 0;
   cursor: default;
 }
 
@@ -199,6 +211,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 1200px) {
+  .laboratory {
+    height: auto;
+  }
+}
 .laboratory__bg {
   height: 100%;
   width: 100%;
@@ -206,6 +223,7 @@
 }
 .laboratory__title {
   width: 100%;
+  padding-top: 20px;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -233,6 +251,17 @@
   text-align: center;
   color: rgba(255, 255, 255, 0.85);
 }
+@media (max-width: 650px) {
+  .laboratory__subtitle {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 720px) {
+  .laboratory__subtitle {
+    width: 70%;
+  }
+}
 .laboratory__main {
   width: 80%;
   height: 480px;
@@ -241,16 +270,52 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 1024px) {
+  .laboratory__main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 40px;
+    height: 90%;
+    overflow-x: hidden;
+  }
+}
 .laboratory__main__block {
   display: flex;
   flex-direction: column;
   width: 300px;
   height: 480px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+  justify-content: center;
   opacity: 0.8;
   background-color: #EAEAEA;
   color: #283593;
+}
+@media (max-width: 1200px) {
+  .laboratory__main__block {
+    width: 250px;
+  }
+}
+@media (max-width: 1024px) {
+  .laboratory__main__block {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 820px) {
+  .laboratory__main__block {
+    height: 300px;
+  }
+}
+@media (max-width: 670px) {
+  .laboratory__main__block {
+    width: 100%;
+    margin: 10px;
+    height: 400px;
+  }
 }
 .laboratory__main__block__title {
   display: flex;
@@ -266,10 +331,33 @@
   line-height: 47px;
   letter-spacing: 0.05em;
 }
+@media (max-width: 1024px) {
+  .laboratory__main__block__title {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 820px) {
+  .laboratory__main__block__title {
+    width: 100px;
+    height: 5px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 670px) {
+  .laboratory__main__block__title {
+    width: 70px;
+    height: 5px;
+    font-size: 14px;
+  }
+}
 .laboratory__main__block__subtitle {
   width: 200px;
   height: 300px;
   margin-top: 90px;
+  color: black !important;
   font-family: Oswald;
   font-size: 16px;
   font-style: normal;
@@ -279,11 +367,60 @@
   text-align: left;
   color: rgba(255, 255, 255, 0.85);
 }
+@media (max-width: 1024px) {
+  .laboratory__main__block__subtitle {
+    width: 140px;
+    height: 200px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 820px) {
+  .laboratory__main__block__subtitle {
+    width: 140px;
+    height: 175px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 630px) {
+  .laboratory__main__block__subtitle {
+    height: 176px;
+    font-size: 12px;
+  }
+}
 .laboratory__main__block__button {
   width: 260px;
   height: 70px;
   border: white solid 6px;
   margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  transition: 0.5s;
+}
+.laboratory__main__block__button:hover {
+  border: #283593 solid;
+  transition: 0.5s;
+  height: 80px;
+}
+@media (max-width: 1200px) {
+  .laboratory__main__block__button {
+    width: 80%;
+    height: 15%;
+  }
+}
+@media (max-width: 1024px) {
+  .laboratory__main__block__button {
+    width: 70%;
+    height: 10%;
+    margin-top: 20px;
+  }
+}
+.laboratory__door-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: 0.7s;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.component.css.map */

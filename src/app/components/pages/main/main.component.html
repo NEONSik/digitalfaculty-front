@@ -1,18 +1,21 @@
-<app-header (onToggleSearch)="changeStateSearchWindow($event)"></app-header>
-<div
-  [ngClass]="{'main__search-container_enable':isActiveSearch}"
-     class="main__search-container">
-  <div class="main__search-line">
-    <app-ui-input
-      class="main__search-input"
-      placeholder="Поиск">
-    </app-ui-input>
+<div class="main__header">
+  <app-header (onToggleSearch)="changeStateSearchWindow($event)"></app-header>
+  <div
+    [ngClass]="{'main__search-container_enable':isActiveSearch}"
+    class="main__search-container">
+    <div class="main__search-line">
+      <app-ui-input
+        class="main__search-input"
+        placeholder="Поиск">
+      </app-ui-input>
+    </div>
   </div>
-</div>
 
-<!--<div class="main__carousel">-->
-<!--  <app-ui-carousel></app-ui-carousel>-->
-<!--</div>-->
+  <div class="main__carousel">
+    <app-ui-carousel></app-ui-carousel>
+  </div>
+
+</div>
 
 <div class="main-knowledge">
   <div class="main-knowledge__title">Узнать Больше</div>
@@ -25,7 +28,7 @@
 </div>
 
 <div class="main__news">
-<app-ui-news></app-ui-news>
+  <app-ui-news></app-ui-news>
 </div>
 
 
@@ -60,45 +63,56 @@
       <div class="laboratory__main__block__subtitle">
         <ul>
           <li>исследование новых
-            возможностей</li>
+            возможностей
+          </li>
           <p></p>
           <li>продвижение</li>
           <p></p>
           <li>обследование и
-            анализ</li>
+            анализ
+          </li>
         </ul>
       </div>
-      <div class="laboratory__main__block__button"></div>
+      <div class="laboratory__main__block__button">
+        <img src="/assets/icons/door.svg" class="laboratory__door-icon"/>
+      </div>
     </div>
     <div class="laboratory__main__block">
       <div class="laboratory__main__block__title">Цифровая</div>
       <div class="laboratory__main__block__subtitle">
         <ul>
           <li>исследование новых
-            возможностей</li>
+            возможностей
+          </li>
           <p></p>
           <li>продвижение</li>
           <p></p>
           <li>обследование и
-            анализ</li>
+            анализ
+          </li>
         </ul>
       </div>
-      <div class="laboratory__main__block__button"></div>
+      <div class="laboratory__main__block__button">
+        <img src="/assets/icons/door.svg" class="laboratory__door-icon"/>
+      </div>
     </div>
     <div class="laboratory__main__block">
       <div class="laboratory__main__block__title">Конструкторская</div>
       <div class="laboratory__main__block__subtitle">
         <ul>
-        <li>исследование новых
-        возможностей</li>
+          <li>исследование новых
+            возможностей
+          </li>
           <p></p>
-        <li>продвижение</li>
+          <li>продвижение</li>
           <p></p>
-        <li>обследование и
-        анализ</li>
+          <li>обследование и
+            анализ
+          </li>
         </ul>
       </div>
       <div class="laboratory__main__block__button">
+        <img src="/assets/icons/door.svg" class="laboratory__door-icon"/>
       </div>
     </div>
   </div>

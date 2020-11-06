@@ -1,3 +1,9 @@
+:host {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  display: flex;
+}
 :host .header {
   color: #000000;
   max-width: 1400px;
@@ -32,7 +38,7 @@
   text-align: start;
   align-items: start;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   :host .header__logo-text {
     display: none;
   }
@@ -104,12 +110,11 @@
   width: 100%;
   transition: 0.5s;
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   justify-content: space-between;
 }
 :host .header__panel-navbar_active {
   transition: 0.5s;
-  margin-bottom: 20px;
   opacity: 1;
   transform-origin: right;
   transform: translateX(0);
@@ -118,6 +123,10 @@
   :host .header__panel-navbar {
     display: none;
   }
+  :host .header__panel-navbar_active {
+    position: relative;
+    margin-bottom: 20px;
+  }
 }
 :host .header__panel-navbar_mobile {
   display: none;
@@ -125,9 +134,22 @@
 @media (max-width: 1200px) {
   :host .header__panel-navbar_mobile {
     display: flex;
-    position: static;
-    height: 100%;
+    right: 0;
+    bottom: -40px;
+    position: absolute;
+    height: max-content;
     width: auto;
+  }
+}
+@media (max-width: 430px) {
+  :host .header__panel-navbar_mobile {
+    display: flex;
+    position: absolute;
+    height: max-content;
+    width: auto;
+    left: 90px;
+    top: 80px;
+    flex-direction: column;
     padding: 0 20px;
   }
 }
@@ -150,7 +172,7 @@
 }
 @media (max-width: 639px) {
   :host .header__navbar-link {
-    margin: 0;
+    margin: 10px;
   }
 }
 :host .header__navbar-link:hover {
@@ -159,6 +181,7 @@
 }
 :host .header__panel {
   height: 100px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
