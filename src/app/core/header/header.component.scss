@@ -12,6 +12,11 @@
     margin: 0 auto;
     width: 100%;
 
+    &_gray {
+      max-width: 100%;
+      background-color: $light-gray;
+    }
+
     &__wrap {
       display: flex;
       padding: 0 20px;
@@ -22,7 +27,7 @@
     }
 
     &__logo {
-      //margin-top: 34px;
+      cursor: pointer;
       display: flex;
       justify-content: space-between;
     }

@@ -1,0 +1,57 @@
+<div class="contacts">
+  <app-header [isChild]="true"
+              (onToggleSearch)="changeStateSearchWindow($event)"
+              class="contact__header"></app-header>
+  <div
+    [ngClass]="{'contacts__search-container_enable':isActiveSearch}"
+    class="contacts__search-container">
+    <div class="contacts__search-line">
+      <app-ui-input
+        class="contacts__search-input"
+        placeholder="Поиск">
+      </app-ui-input>
+    </div>
+  </div>
+  <div class="contacts__body">
+    <div class="contacts__background">
+    </div>
+    <div class="box">
+      <a class="card" href="https://bsu.by/employee/40235-d" target="_blank">
+        <div class="imgBx">
+          <img src="https://bsu.by/upload/cacheResize/d0e/35e/f295bc05cf6d3fada7bd35a934ee6730.jpeg" alt="images">
+        </div>
+        <div class="details">
+          <h2>Иван Алексеевич
+            Шалатонин<br><span>
+
+Старший преподаватель</span></h2>
+        </div>
+      </a>
+
+      <a class="card" href="https://bsu.by/employee/41229-d" target="_blank">
+        <div class="imgBx">
+          <img src="https://bsu.by/upload/cacheResize/a3b/315/023abf92612080df891d68998a81f54c.png" alt="images">
+        </div>
+        <div class="details">
+          <h2>Елена Ивановна
+            Козлова<br><span>
+Кандидат физико-математических наук, доцент</span></h2>
+        </div>
+      </a>
+
+      <a class="card" href="https://bsu.by/employee/39891-d" target="_blank">
+        <div class="imgBx">
+          <img src="https://bsu.by/upload/cacheResize/a62/882/e604ec45cc995f75ad450ea68acff51d.png" alt="images">
+        </div>
+        <div class="details">
+          <h2>Юрий Иосифович
+            Воротницкий<br><span>
+Кандидат физико-математических наук, доцент</span></h2>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>

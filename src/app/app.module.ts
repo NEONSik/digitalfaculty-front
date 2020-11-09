@@ -9,10 +9,13 @@ import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './components/pages/main/main.component';
 import {NewsComponent} from './components/pages/news/news.component';
 import {LaboratoryBoardComponent} from './components/pages/laboratory-board/laboratory-board.component';
+import {ContactsModule} from './components/pages/contacts/contacts.module';
+import {ContactsComponent} from './components/pages/contacts/contacts.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'news', component: NewsComponent},
+  {path: 'contacts', component: ContactsComponent},
   {path: 'board', component: LaboratoryBoardComponent},
 ];
 
@@ -25,6 +28,7 @@ const routes: Routes = [
     BrowserModule,
     LaboratoryBoardModule,
     MainModule,
+    ContactsModule,
     NewsModule,
     RouterModule.forRoot(routes)
   ],

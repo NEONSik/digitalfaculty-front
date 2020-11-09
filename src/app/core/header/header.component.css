@@ -10,6 +10,10 @@
   margin: 0 auto;
   width: 100%;
 }
+:host .header_gray {
+  max-width: 100%;
+  background-color: #EAEAEA;
+}
 :host .header__wrap {
   display: flex;
   padding: 0 20px;
@@ -18,6 +22,7 @@
   align-items: center;
 }
 :host .header__logo {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
 }
