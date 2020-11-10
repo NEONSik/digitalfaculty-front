@@ -99,3 +99,54 @@
   text-align: left;
   color: rgba(255, 255, 255, 0.85);
 }
+
+@mixin font-oswald-30-normal{
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@mixin font-oswald-15-normal-l{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@mixin font-oswald-15-normal-l-title{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@mixin font-oswald-18-normal-l{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: justify;
+  color: #000000;
+}
+
+@mixin font-oswald-24-normal{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: justify;
+  color: #000000;
+}
