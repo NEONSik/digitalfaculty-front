@@ -8,15 +8,17 @@ import {NewsModule} from './components/pages/news/news.module';
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './components/pages/main/main.component';
 import {NewsComponent} from './components/pages/news/news.component';
-import {LaboratoryBoardComponent} from './components/pages/laboratory-board/laboratory-board.component';
 import {ContactsModule} from './components/pages/contacts/contacts.module';
 import {ContactsComponent} from './components/pages/contacts/contacts.component';
+import {LaboratoriesComponent} from './components/pages/laboratory/laboratories.component';
+import {LaboratoriesModule} from './components/pages/laboratory/laboratories.module';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'news', component: NewsComponent},
   {path: 'contacts', component: ContactsComponent},
-  {path: 'laboratories', component: LaboratoryBoardComponent},
+  {path: 'laboratories', component: LaboratoriesComponent},
+  {path: 'laboratory', component: LaboratoryBoardModule},
 ];
 
 
@@ -28,7 +30,7 @@ const routes: Routes = [
     BrowserModule,
     LaboratoryBoardModule,
     MainModule,
-    ContactsModule,
+    LaboratoriesModule, ContactsModule,
     NewsModule,
     RouterModule.forRoot(routes)
   ],
