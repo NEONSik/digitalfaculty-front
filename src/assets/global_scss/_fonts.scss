@@ -150,3 +150,13 @@
   text-align: justify;
   color: #000000;
 }
+
+@mixin font-roboto-30-normal{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: rgba(83, 83, 83, 0.95);
+}
