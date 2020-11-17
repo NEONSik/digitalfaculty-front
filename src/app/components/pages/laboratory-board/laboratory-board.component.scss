@@ -215,10 +215,18 @@
 
   &__up-title{
     @include font-oswald-15-normal;
+
+    @media (max-width: 440px) {
+      display: none;
+    }
   }
 
   &__down-title{
     @include font-oswald-15-normal;
+
+    @media (max-width: 440px) {
+      display: none;
+    }
   }
 }
 
