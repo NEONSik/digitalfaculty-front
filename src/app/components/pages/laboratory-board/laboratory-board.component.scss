@@ -211,9 +211,15 @@
   &__svg{
     display: flex;
     margin-right: 33px;
+    cursor: pointer;
+
+    @media (max-width: 440px) {
+      margin: 0 auto;
+    }
   }
 
   &__up-title{
+    cursor: pointer;
     @include font-oswald-15-normal;
 
     @media (max-width: 440px) {
@@ -222,6 +228,7 @@
   }
 
   &__down-title{
+    cursor: pointer;
     @include font-oswald-15-normal;
 
     @media (max-width: 440px) {

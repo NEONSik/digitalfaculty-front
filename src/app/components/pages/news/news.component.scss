@@ -1,0 +1,183 @@
+@import "../../../../assets/global_scss/fonts";
+
+.header-news{
+  width: 100%;
+  height: 110px;
+  background-color: #DADADA;
+}
+
+.title{
+  display: flex;
+  width: 100%;
+  height: max-content;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+  @include font-roboto-30-normal;
+
+  &__line {
+    width: 550px;
+    border: 1px solid #242424;
+    opacity: 15%;
+  }
+}
+
+.news{
+  width: 100%;
+  display: flex;
+
+  &__main{
+    display: flex;
+    margin: 0 auto;
+
+    @media (max-width: 1060px){
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (max-width: 750px){
+      margin: 0 10px 0 10px;
+    }
+  }
+
+  &__pic{
+    cursor: pointer;
+
+    @media (max-width: 1060px){
+      //display: flex;
+      //justify-content: center;
+      //align-items: center;
+    }
+
+    &__style{
+      @media (max-width: 400px){
+        width: 90%;
+        height: 90%;
+      }
+    }
+  }
+
+  &__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__data{
+    @include font-oswald-18-normal;
+    cursor: default;
+
+    @media (max-width: 750px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 400px){
+      width: 300px;
+    }
+  }
+
+  &__title{
+    cursor: pointer;
+    margin: 15px 0px 5px 0px;
+    @include font-oswald-24-normal;
+
+
+    @media (max-width: 750px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 400px){
+      width: 300px;
+    }
+
+    @media (max-width: 330px){
+      width: 250px;
+    }
+  }
+
+  &__subtitle{
+    font-size: 16px;
+    width: 687px;
+    cursor: pointer;
+    @include font-oswald-18-normal;
+
+
+    @media (max-width: 750px) {
+      font-size: 14px;
+      width: 100%;
+    }
+
+    @media (max-width: 400px){
+      width: 300px;
+    }
+
+    @media (max-width: 330px){
+      width: 250px;
+    }
+  }
+}
+
+.news__line{
+  display: flex;
+  margin: 25px auto;
+  width: 1000px;
+  border: 1px solid #242424;
+  opacity: 15%;
+
+  @media (max-width: 1035px) {
+    width: 90%;
+  }
+}
+
+.news__button{
+  display: flex;
+  width: 110px;
+  height: 35px;
+  background: #202767;
+  margin: 63px auto 78px auto;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  @include font-oswald-16-normal;
+}
+
+.footer{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  background-color: #DADADA;
+  justify-content: center;
+  align-items: center;
+
+  &__svg{
+    display: flex;
+    margin-right: 33px;
+    cursor: pointer;
+
+    @media (max-width: 440px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__up-title{
+    cursor: pointer;
+    @include font-oswald-15-normal;
+
+    @media (max-width: 440px) {
+      display: none;
+    }
+  }
+
+  &__down-title{
+    cursor: pointer;
+    @include font-oswald-15-normal;
+
+    @media (max-width: 440px) {
+      display: none;
+    }
+  }
+}
