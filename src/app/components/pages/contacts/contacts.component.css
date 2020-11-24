@@ -68,7 +68,7 @@
   grid-gap: 15px;
   margin: 0 auto;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .box {
     display: flex;
     flex-direction: column;
@@ -85,6 +85,11 @@
   margin: 0 auto;
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1200px) {
+  .card {
+    margin: 15px auto;
+  }
 }
 
 .card:before,
@@ -159,6 +164,223 @@
   color: #f38695;
   display: block;
   margin-top: 5px;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: rgba(83, 83, 83, 0.95);
+}
+.title__line {
+  width: 550px;
+  border: 1px solid #242424;
+  opacity: 15%;
+}
+
+.map {
+  display: flex;
+  margin-top: 53px;
+}
+.map__block {
+  margin: 0 auto;
+}
+
+.info {
+  width: 100%;
+  height: max-content;
+  display: flex;
+}
+.info__main {
+  display: flex;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .info__main {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+.info__feed {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 900px) {
+  .info__feed {
+    margin-left: 50px;
+  }
+}
+.info__feed-block {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 37px;
+}
+@media (max-width: 1200px) {
+  .info__feed-block {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1080px) {
+  .info__feed-block {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .info__feed-block {
+    margin-bottom: 15px;
+  }
+}
+.info__location-block {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.info__svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.info__title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+.info__title__up {
+  width: max-content;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+@media (max-width: 480px) {
+  .info__title__up {
+    font-size: 12px;
+  }
+}
+.info__title__down {
+  width: 337px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+@media (max-width: 480px) {
+  .info__title__down {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .info__title__down {
+    width: 140px;
+  }
+}
+.info__title__local {
+  width: 628px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+@media (max-width: 1200px) {
+  .info__title__local {
+    width: 450px;
+  }
+}
+@media (max-width: 1080px) {
+  .info__title__local {
+    width: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .info__title__local {
+    font-size: 12px;
+    width: 200px;
+  }
+}
+.info__location {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.info__location-title {
+  cursor: default;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  background-color: #DADADA;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+.footer__svg {
+  display: flex;
+  margin-right: 33px;
+}
+.footer__up-title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: black;
+}
+@media (max-width: 440px) {
+  .footer__up-title {
+    display: none;
+  }
+}
+.footer__down-title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: black;
+}
+@media (max-width: 440px) {
+  .footer__down-title {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=contacts.component.css.map */
