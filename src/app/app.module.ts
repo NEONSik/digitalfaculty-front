@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {ReactiveFormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {LaboratoryBoardModule} from './components/pages/laboratory-board/laboratory-board.module';
@@ -13,6 +14,8 @@ import {ContactsComponent} from './components/pages/contacts/contacts.component'
 import {LaboratoriesComponent} from './components/pages/laboratory/laboratories.component';
 import {LaboratoriesModule} from './components/pages/laboratory/laboratories.module';
 import {LaboratoryBoardComponent} from './components/pages/laboratory-board/laboratory-board.component';
+import {ContactFormComponent} from './components/pages/contact-form/contact-form.component';
+import {ContactFormModule} from './components/pages/contact-form/contact-form.module';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
@@ -20,6 +23,7 @@ const routes: Routes = [
   {path: 'contacts', component: ContactsComponent},
   {path: 'laboratories', component: LaboratoriesComponent},
   {path: 'laboratory', component: LaboratoryBoardComponent},
+  {path: 'contact-form', component: ContactFormComponent},
 ];
 
 
@@ -33,7 +37,8 @@ const routes: Routes = [
     MainModule,
     LaboratoriesModule, ContactsModule,
     NewsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
