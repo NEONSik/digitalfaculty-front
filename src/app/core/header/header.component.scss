@@ -1,10 +1,11 @@
 @import "../../../assets/global_scss/fonts";
 
 :host {
-  position: absolute;
+  //position: absolute;
   z-index: 99999;
   width: 100%;
   display: flex;
+  background-color: $light-gray;
 
   .header {
     color: $black;
