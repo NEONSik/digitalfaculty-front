@@ -14,7 +14,7 @@ export class LaboratoriesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateToPage() {
-    this.router.navigate(['laboratory']);
+  navigateToPage(id:string) {
+    this.router.navigate(['laboratory', id]);
   }
 }

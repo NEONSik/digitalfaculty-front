@@ -22,7 +22,7 @@ const routes: Routes = [
   {path: 'news', component: NewsComponent},
   {path: 'contacts', component: ContactsComponent},
   {path: 'laboratories', component: LaboratoriesComponent},
-  {path: 'laboratory', component: LaboratoryBoardComponent},
+  {path: 'laboratory/:id', component: LaboratoryBoardComponent},
   {path: 'contact-form', component: ContactFormComponent},
 ];
 
