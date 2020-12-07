@@ -1,0 +1,51 @@
+@import "../../../../assets/global_scss/fonts";
+
+
+.spinner:nth-child(1) {
+  --animation-duration: 1000ms;
+
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .spinner-item {
+    width: calc(75px / 12);
+    height: 80%;
+    background: $light-gray;
+    border: 1px solid $black;
+    animation: spinner1 1000ms ease-in-out infinite;
+
+    @keyframes spinner1 {
+      50% {
+        transform: scaleY(0.25);
+      }
+    }
+  }
+
+  .spinner-item:nth-child(1) {
+    --clr-spinner:$light-gray;
+    animation-delay: calc(1000ms / 10 * -3);
+  }
+
+  .spinner-item:nth-child(2) {
+    --clr-spinner: $black;
+    animation-delay: calc(1000ms / 10 * -1);
+  }
+
+  .spinner-item:nth-child(3) {
+    --clr-spinner: $light-gray;
+    animation-delay: calc(1000ms / 10 * -2);
+  }
+
+  .spinner-item:nth-child(4) {
+    --clr-spinner: $black;
+    animation-delay: calc(1000ms / 10 * -1);
+  }
+
+  .spinner-item:nth-child(5) {
+    --clr-spinner: $light-gray;
+    animation-delay: calc(1000ms/ 10 * -3);
+  }
+}

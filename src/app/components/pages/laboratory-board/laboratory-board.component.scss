@@ -1,12 +1,12 @@
 @import "../../../../assets/global_scss/fonts";
 
-.header-lab{
+.header-lab {
   width: 100%;
   height: 110px;
   background-color: #DADADA;
 }
 
-.info{
+.info {
   width: 100%;
   height: 300px;
   display: flex;
@@ -17,12 +17,12 @@
     height: max-content;
   }
 
-  &__name{
+  &__name {
     margin: 0 auto;
     @include font-oswald-30-normal;
   }
 
-  &__bottom{
+  &__bottom {
     margin-top: 70px;
     display: flex;
     flex-direction: row;
@@ -36,7 +36,7 @@
     }
   }
 
-  &__line{
+  &__line {
     width: 0px;
     height: 195px;
     border: lightgray solid 1px;
@@ -47,7 +47,7 @@
     }
   }
 
-  &__block{
+  &__block {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -64,11 +64,11 @@
       width: 300px;
     }
 
-    &__pic{
+    &__pic {
       margin-bottom: 20px;
     }
 
-    &__title{
+    &__title {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -76,7 +76,7 @@
       @include font-oswald-15-normal-l-title;
     }
 
-    &__subtitle{
+    &__subtitle {
       display: flex;
       width: 338px;
       justify-content: center;
@@ -90,7 +90,7 @@
   }
 }
 
-.main-text{
+.main-text {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -101,11 +101,12 @@
     margin-top: 0px;
   }
 
-  &__pic{
+  &__pic {
     display: flex;
 
-    &__style{
-
+    &__style {
+      max-width: 410px;
+      max-height: 250px;
       @media (max-width: 490px) {
         display: flex;
         margin: 0 auto;
@@ -125,25 +126,37 @@
     justify-content: center;
     align-items: center;
     @include font-oswald-18-normal-l;
+    &:nth-child(2), &:nth-child(4) {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      flex-direction: row-reverse;
+    }
 
+    &:nth-child(1), &:nth-child(3), &:nth-child(5) {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      flex-direction: row;
+    }
     @media (max-width: 1080px) {
-      &:nth-child(2),&:nth-child(4){
+      &:nth-child(2), &:nth-child(4) {
         display: flex;
         flex-direction: column-reverse;
         height: max-content;
-        margin-top: 0px;
+        margin-top: 0;
       }
 
-      &:nth-child(1),&:nth-child(3),&:nth-child(5){
+      &:nth-child(1), &:nth-child(3), &:nth-child(5) {
         display: flex;
         flex-direction: column;
         height: max-content;
         margin-top: 0px;
       }
     }
-}
+  }
 
-  &__title{
+  &__title {
     height: max-content;
     display: flex;
 
@@ -153,7 +166,7 @@
   }
 }
 
-.footer{
+.footer {
   width: 100%;
   height: 150px;
   display: flex;
@@ -161,7 +174,7 @@
   justify-content: center;
   align-items: center;
 
-  &__svg{
+  &__svg {
     display: flex;
     margin-right: 33px;
     cursor: pointer;
@@ -171,7 +184,7 @@
     }
   }
 
-  &__up-title{
+  &__up-title {
     cursor: pointer;
     @include font-oswald-15-normal;
 
@@ -180,7 +193,7 @@
     }
   }
 
-  &__down-title{
+  &__down-title {
     cursor: pointer;
     @include font-oswald-15-normal;
 
@@ -189,4 +202,5 @@
     }
   }
 }
+
 

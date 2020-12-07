@@ -20,7 +20,7 @@ export class LabService {
             ',\n' +
             'дипломных\n' +
             'и магистерских\n' +
-            'работ.\n', image: 'src/assets/images/network_pic(1).jpeg'
+            'работ.\n', image: '/assets/images/network_pic(1).jpeg'
         },
         {
           id: 1, description: '\n' +
@@ -55,7 +55,7 @@ export class LabService {
             'различных датчиков и плат расширения, в том числе\n' +
             'для сете\n' +
             'вых интерфейсов\n' +
-            '.', image: 'src/assets/images/network_pic(2).jpeg'
+            '.', image: '/assets/images/network_pic(2).jpeg'
         }, {
           id: 2, description: '\n' +
             'Лаборатория оснащена современным лицензионным программным обеспечением\n' +
@@ -64,7 +64,7 @@ export class LabService {
             'Altium\n' +
             'Designer\n' +
             '.\n' +
-            'Проводятся авторские курсы по работе с данными системами.', image: 'src/assets/images/network_pic(3).jpeg'
+            'Проводятся авторские курсы по работе с данными системами.', image: '/assets/images/network_pic(3).jpeg'
         }
       ]
     }, {
@@ -83,12 +83,12 @@ export class LabService {
             ',\n' +
             'дипломных\n' +
             'и магистерских\n' +
-            'работ.', image: 'src/assets/images/network_pic(1).jpeg'
+            'работ.', image: '/assets/images/network_pic(1).jpeg'
         },
         {
           id: 1,
           description: 'Учебный класс на базе лаборатории имеет 17 рабочих мест.',
-          image: 'src/assets/images/network_pic(2).jpeg'
+          image: '/assets/images/network_pic(2).jpeg'
         },
         {
           id: 2, description: 'В рамках лаборатории\n' +
@@ -108,7 +108,7 @@ export class LabService {
             'ифров\n' +
             'ая\n' +
             'обработк\n' +
-            'а сигналов', image: 'src/assets/images/network_pic(3).jpeg'
+            'а сигналов', image: '/assets/images/network_pic(3).jpeg'
         }
       ]
     },
@@ -131,7 +131,7 @@ export class LabService {
             'дипломных\n' +
             'и\n' +
             'магистерских\n' +
-            'работ.', image: 'src/assets/images/machine_lab(1).jpg'
+            'работ.', image: '/assets/images/machine_lab(1).jpg'
         },
         {
           id: 1, description: '\n' +
@@ -164,7 +164,7 @@ export class LabService {
             'изучения промышленных сетей, промышленных компьютеров, промышленных контроллеров,\n' +
             'промышленного интернета вещей, телекоммуникационных систем и технологий, переданным в\n' +
             'БГУ компанией\n' +
-            'MOXA', image: 'src/assets/images/machine_lab(2).jpg'
+            'MOXA', image: '/assets/images/machine_lab(2).jpg'
         },
         {
           id: 2, description: 'У\n' +
@@ -172,7 +172,7 @@ export class LabService {
             'ьзуется для проведения лабораторных работ по курсам\n' +
             '«Компьютерные сети» и «Промышленные сети», а также для подготовки курсовых и дипломных\n' +
             'работ. На базе оборудования класса студентами выполняются курсовые, дипломные и\n' +
-            'магистерские работы.', image: 'src/assets/images/machine_lab(3).jpg'
+            'магистерские работы.', image: '/assets/images/machine_lab(3).jpg'
         }
       ]
     },
@@ -191,7 +191,8 @@ export class LabService {
             'информации:', image: 'src/assets/images/CCTV(1).jpg'
         },
         {
-          id: 1, description: 'Включение в единую сеть: устройства отображения информации должны\n' +
+          id: 1,
+          description: 'Включение в единую сеть: устройства отображения информации должны\n' +
             'быть подключены непосредственно в единую сеть устройств, для обеспечения тесной\n' +
             'интеграции между ними и другими подсистемами с использованием протоколов\n' +
             'сетевого и\n' +
@@ -206,7 +207,8 @@ export class LabService {
             'Отображение статической информации: отдельные устройства подсистемы\n' +
             'отображения должны быть способны по команде с подсистемы управления осуществлять\n' +
             'отображе\n' +
-            'ние статической графической информации, до поступления новой команды.', image: 'src/assets/images/CCTV(2).jpg'
+            'ние статической графической информации, до поступления новой команды.',
+          image: 'src/assets/images/CCTV(2).jpg'
         }, {
           id: 2, description: 'Отображение видеоинформации в статическом режиме: отдельные\n' +
             'устройства подсистемы отображения должны быть способны по команде с подсистемы\n' +
@@ -264,7 +266,8 @@ export class LabService {
             'лаборатория систем идентификации и др', image: 'src/assets/images/tele-lab(1).jpg'
         },
         {
-          id: 1, description: 'Взаимодействие между основными составляющими и разработанными системами\n' +
+          id: 1,
+          description: 'Взаимодействие между основными составляющими и разработанными системами\n' +
             'осуществляется на базе ЛВС ЦОС БГУ. Для раздел\n' +
             'ения сегментов сети используются\n' +
             'входные маршрутизаторы учебных корпусов, а также коммутаторы и маршрутизаторы,\n' +
@@ -282,7 +285,8 @@ export class LabService {
             'по требованию м\n' +
             'ожет быть запрошена подсистемой визуализации для отображения\n' +
             'видеопотока любым из устройств подсистемы отображения, а также другими устройствами,\n' +
-            'подключенными к внутренней сети при помощи, например, беспроводного соединения.', image: 'src/assets/images/tele-lab(2).jpg'
+            'подключенными к внутренней сети при помощи, например, беспроводного соединения.',
+          image: 'src/assets/images/tele-lab(2).jpg'
         }, {
           id: 2, description: '\n' +
             'Помимо отображения, записанн\n' +
@@ -388,6 +392,6 @@ export class LabService {
   }
 
   public initLabFromService(activeRouteId: string): LaboratoryInterface {
-   return this.labs.find(lab => lab.labId === +activeRouteId);
+    return this.labs.find(lab => lab.labId === +activeRouteId);
   }
 }

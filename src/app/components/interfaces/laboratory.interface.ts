@@ -1,4 +1,5 @@
 export interface LaboratoryInterface {
+  labId: number;
   titleOfLab: string;
   svgLeft: string;
   svgRight: string;
