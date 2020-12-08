@@ -8,10 +8,11 @@
     <div class="info__block">
       <div class="info__block__pic" [ngSwitch]="lab?.labId">
       <app-ui-signal *ngSwitchCase="2"></app-ui-signal>
+        <app-ui-circile-load *ngSwitchCase="1"></app-ui-circile-load>
+        <app-ui-cubes *ngSwitchCase="0"></app-ui-cubes>
       </div>
-      <div class="info__block__title">Автоматизация Технологических Процессов</div>
-      <div class="info__block__subtitle">Соединение достижений в области индустрии с новейшими
-        достижениями в области информатизации
+      <div class="info__block__title">{{lab?.titleOfLab}}</div>
+      <div class="info__block__subtitle">{{lab?.subtitle}}
       </div>
     </div>
     <div class="info__line"></div>
