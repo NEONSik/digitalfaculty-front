@@ -2,6 +2,9 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {LaboratoryBoardComponent} from './laboratory-board.component';
 import {HeaderModule} from '../../../core/header/header.module';
+import {UiSignalModule} from '../../ui/ui-signal/ui-signal.module';
+import {UiCircleLoadModule} from '../../ui/ui-circle-load/ui-circle-load.module';
+import {UiCubesModule} from '../../ui/ui-cubes/ui-cubes.module';
 
 
 @NgModule({
@@ -9,7 +12,10 @@ import {HeaderModule} from '../../../core/header/header.module';
   exports: [LaboratoryBoardComponent],
   imports: [
     CommonModule,
-    HeaderModule
+    HeaderModule,
+    UiCircleLoadModule,
+    UiCubesModule,
+    UiSignalModule
   ]
 })
 export class LaboratoryBoardModule {
