@@ -54,7 +54,7 @@
       margin-right: 30px;
       height: 40px;
 
-      @media (max-width: 420px) {
+      @media (max-width: 390px) {
         margin-right: 0px;
       }
     }
@@ -139,16 +139,20 @@
         transform-origin: right;
         transform: translateX(0);
 
-        @media (max-width: 420px) {
-          width: 0%;
-        }
+        //@media (max-width: 420px) {
+        //  width: 0%;
+        //}
       }
 
       justify-content: space-between;
       @media (max-width: 1200px) {
         display: flex;
         &_active {
-          position: relative;
+          @media (max-width: 570px) {
+            position: relative;
+            width: 0%;
+          }
+
         }
       }
 
@@ -193,6 +197,7 @@
       cursor: pointer;
       transition: .3s;
       margin: 0 40px;
+      outline: inherit;
       @include font-oswald-17-normal;
       @media (max-width: 1200px) {
         margin: 0 20px;
@@ -217,8 +222,9 @@
       justify-content: space-between;
       align-items: center;
 
-      @media (max-width: 390px) {
+      @media (max-width: 420px) {
         justify-content: normal;
+        width: 80%;
       }
     }
   }

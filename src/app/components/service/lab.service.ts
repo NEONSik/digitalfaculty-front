@@ -196,7 +196,7 @@ export class LabService {
             '-\n' +
             'зависимых данных по требованию. Ключевые характеристики\n' +
             'подсистемы отображения\n' +
-            'информации:', image: 'src/assets/images/CCTV(1).jpg'
+            'информации:', image: '/assets/images/CCTV(1).jpg'
         },
         {
           id: 1,
@@ -216,7 +216,7 @@ export class LabService {
             'отображения должны быть способны по команде с подсистемы управления осуществлять\n' +
             'отображе\n' +
             'ние статической графической информации, до поступления новой команды.',
-          image: 'src/assets/images/CCTV(2).jpg'
+          image: '/assets/images/CCTV(2).jpg'
         }, {
           id: 2, description: 'Отображение видеоинформации в статическом режиме: отдельные\n' +
             'устройства подсистемы отображения должны быть способны по команде с подсистемы\n' +
@@ -231,7 +231,7 @@ export class LabService {
             'осуществлять отображение видеоинформации, передаваемой в потоковом режиме, как с\n' +
             'источников записи в реальном времени, предоставляемых подсистемой видеонаблюдения,\n' +
             'так и со статических источников, предоставляемых подсистемой хранения, по з\n' +
-            'апросу.', image: 'src/assets/images/CCTV(3).jpg'
+            'апросу.', image: '/assets/images/CCTV(3).jpg'
         }
       ]
     },
@@ -244,12 +244,12 @@ export class LabService {
       svgRight: '',
       arrayOfArticles: [
         {
-          id: 0, description: '', image: 'src/assets/images/intelligent_system(1).jpg'
+          id: 0, description: '', image: '/assets/images/intelligent_system(1).jpg'
         },
         {
-          id: 1, description: '', image: 'src/assets/images/intelligent_system(2).jpg'
+          id: 1, description: '', image: '/assets/images/intelligent_system(2).jpg'
         }, {
-          id: 2, description: '', image: 'src/assets/images/intelligent_system(3).jpg'
+          id: 2, description: '', image: '/assets/images/intelligent_system(3).jpg'
         }
       ]
     },
@@ -275,7 +275,7 @@ export class LabService {
             'преподавателей и студентов, такими как: лаборатория промышл\n' +
             'енных сетей и IoT,\n' +
             'лаборатория машинного обучения, лаборатория автоматизированного проектирования,\n' +
-            'лаборатория систем идентификации и др', image: 'src/assets/images/tele-lab(1).jpg'
+            'лаборатория систем идентификации и др', image: '/assets/images/tele-lab(1).jpg'
         },
         {
           id: 1,
@@ -298,7 +298,7 @@ export class LabService {
             'ожет быть запрошена подсистемой визуализации для отображения\n' +
             'видеопотока любым из устройств подсистемы отображения, а также другими устройствами,\n' +
             'подключенными к внутренней сети при помощи, например, беспроводного соединения.',
-          image: 'src/assets/images/tele-lab(2).jpg'
+          image: '/assets/images/tele-lab(2).jpg'
         }, {
           id: 2, description: '\n' +
             'Помимо отображения, записанн\n' +
@@ -312,7 +312,7 @@ export class LabService {
             'Администрирование серверного оборудования и управление программным\n' +
             'обеспечением подсистем\n' +
             'ы хранения информации осуществляется на базе центра\n' +
-            'управления ЦОС.', image: 'src/assets/images/tele-lab(3).jpg'
+            'управления ЦОС.', image: '/assets/images/tele-lab(3).jpg'
         }
       ]
     },
@@ -325,8 +325,7 @@ export class LabService {
       svgRight: '',
       arrayOfArticles: [
         {
-          id: 0, description: 'Подсистема видеонаблюдения\n' +
-            'Приоритетной задачей разрабатываемой подсистемы видеонаблюдения является\n' +
+          id: 0, description: 'Приоритетной задачей разрабатываемой подсистемы видеонаблюдения является\n' +
             'повышение качества практикоориентированной подготовки специалистов в области\n' +
             'радиофизики и компьютерных технологий путем глубокой модернизации учебного\n' +
             'процесса на базе создаваемого К\n' +
@@ -342,7 +341,7 @@ export class LabService {
             'рывный сбор видеоинформации с записью на сетевое\n' +
             'хранилище, предоставляемое подсистемой хранения, а также предоставление возможности\n' +
             'потоковой передачи захватываемой видеоинформации в реальном времени по запросу от\n' +
-            'подсистемы управления.', image: 'src/assets/images/lab-radio(1).jpg'
+            'подсистемы управления.', image: '/assets/images/lab-radio(1).jpg'
         },
         {
           id: 1, description: 'Отдельные устройства подсистемы видеонаблюдения должны обеспечивать\n' +
@@ -364,7 +363,7 @@ export class LabService {
             'подсистема управления при необходимости может подключиться непосредственно к\n' +
             'конечному устройству для перехвата видеопотока, что, в свою очере\n' +
             'дь, обеспечивает\n' +
-            'возможность его трансляции в реальном времени.', image: 'src/assets/images/lab-radio(2).jpg'
+            'возможность его трансляции в реальном времени.', image: '/assets/images/lab-radio(2).jpg'
         }, {
           id: 2, description: 'Подсистемы радиочастотной идентификации\n' +
             'Архитектура разработанной системы спроектирована с возможностью расширения\n' +
@@ -380,7 +379,7 @@ export class LabService {
             'им образом, разработанная подсистема представляет собой модульный\n' +
             'комплекс, позволяющий добавлять дополнительные элементы в процессе работы студентов\n' +
             'над дипломными проектами и лабораторными работами.\n' +
-            'Далее подробнее описываются составные части системы.', image: 'src/assets/images/lab-radio(3).jpg'
+            'Далее подробнее описываются составные части системы.', image: '/assets/images/lab-radio(3).jpg'
         }
       ]
     },
@@ -393,12 +392,12 @@ export class LabService {
       svgRight: '',
       arrayOfArticles: [
         {
-          id: 0, description: '', image: 'src/assets/images/(1).jpg'
+          id: 0, description: '', image: '/assets/images/(1).jpg'
         },
         {
-          id: 1, description: '', image: 'src/assets/images/(2).jpg'
+          id: 1, description: '', image: '/assets/images/(2).jpg'
         }, {
-          id: 2, description: '', image: 'src/assets/images/(3).jpg'
+          id: 2, description: '', image: '/assets/images/(3).jpg'
         }
       ]
     }
