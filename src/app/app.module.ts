@@ -15,8 +15,8 @@ import {LaboratoriesComponent} from './components/pages/laboratory/laboratories.
 import {LaboratoriesModule} from './components/pages/laboratory/laboratories.module';
 import {LaboratoryBoardComponent} from './components/pages/laboratory-board/laboratory-board.component';
 import {ContactFormComponent} from './components/pages/contact-form/contact-form.component';
-import {ContactFormModule} from './components/pages/contact-form/contact-form.module';
 import {SchemeComponent} from './components/pages/scheme/scheme.component';
+import {SchemeModule} from './components/pages/scheme/scheme.module';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
@@ -38,6 +38,7 @@ const routes: Routes = [
     LaboratoryBoardModule,
     MainModule,
     LaboratoriesModule, ContactsModule,
+    SchemeModule,
     NewsModule,
     RouterModule.forRoot(routes),
     ReactiveFormsModule,
