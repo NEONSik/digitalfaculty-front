@@ -16,6 +16,7 @@ import {LaboratoriesModule} from './components/pages/laboratory/laboratories.mod
 import {LaboratoryBoardComponent} from './components/pages/laboratory-board/laboratory-board.component';
 import {ContactFormComponent} from './components/pages/contact-form/contact-form.component';
 import {ContactFormModule} from './components/pages/contact-form/contact-form.module';
+import {SchemeComponent} from './components/pages/scheme/scheme.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'laboratories', component: LaboratoriesComponent},
   {path: 'laboratory/:id', component: LaboratoryBoardComponent},
   {path: 'contact-form', component: ContactFormComponent},
+  {path: 'scheme/:id', component: SchemeComponent}
 ];
 
 
